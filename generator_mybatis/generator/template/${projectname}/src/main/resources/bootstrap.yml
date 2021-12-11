@@ -1,0 +1,56 @@
+server:
+  port: 12020
+spring:
+  application:
+    name: ${projectname}    # 对应config server所获取的配置文件的{application}
+  thymeleaf:
+    mode: LEGACYHTML5
+    cache: false
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null
+  zipkin:
+      base-url: http://127.0.0.1:7902/
+  sleuth:
+      sampler:
+        percentage: 1.0 
+  cloud:
+    config:
+      uri: http://localhost:7901/
+      profile: dev            # profile对应config server所获取的配置文件中的{profile}
+      label: master           # 指定Git仓库的分支，对应config server所获取的配置文件的{label}
+      username: root
+      password: root
+      discovery:
+        enabled: true
+        service-id: yqjp-spring-cloud-config
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+
+#请求和响应GZIP压缩支持
+feign:
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://root:root@localhost:12000/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${r"${spring.cloud.client.ipAddress}"}:${r"${spring.application.name}"}:${r"${server.port}"}      
+

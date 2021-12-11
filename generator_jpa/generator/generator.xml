@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment>
+		代码生成器配置文件:
+		1.会为所有的property生成property_dir属性,如pkg=com.company => pkg_dir=com/company
+		2.可以引用环境变量: ${env.JAVA_HOME} or System.properties: ${user.home},property之间也可以相互引用
+	</comment>
+	<!-- 代码基本的包路径 -->
+	<entry key="basepackage">com.angogo.rpa.console.tencentad.api</entry>
+	<entry key="support_basepackage">com.angogo.rpa.console.tencentad.support</entry>
+	<entry key="projectname">tencentad</entry>
+	<!-- js 和 freemarker 包名称  -->
+	<entry key="targetpackage">tencentad</entry>
+	<entry key="gatewayname">sys</entry>
+	<!-- jsp namespace: web/${namespace}/${className}/list.jsp -->
+	<entry key="namespace">ftl</entry>
+	
+	<entry key="jdbcusername">developer</entry>
+	<entry key="jdbcpassword">ihel0rdDlbWySzTx</entry>
+	
+	<!-- Mysql -->
+	<entry key="jdbcurl">jdbc:mysql://121.37.27.4:3306/rpa_tencent_ad?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false</entry>
+		
+	<!-- 输出的代码路径 -->
+	<entry key="outRoot">generator-output</entry>
+	<!-- 需要移除的表名前缀,使用逗号进行分隔多个前缀,示例值: t_,v_ -->
+	<entry key="tableRemovePrefixes">t_,tc_</entry>
+	<!-- oracle,MSSQL需要指定jdbc.schema,其它数据库忽略此项配置  -->
+	<entry key="jdbc.schema"></entry>
+	<entry key="jdbc.catalog"></entry>
+	<!-- 数据库类型映射  -->
+	<entry key="java_typemapping.java.sql.Timestamp">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Date">java.util.Date</entry>
+	<entry key="java_typemapping.java.sql.Time">java.util.Date</entry>
+	<entry key="java_typemapping.java.lang.Byte">Integer</entry>
+	<entry key="java_typemapping.java.lang.Short">Integer</entry>
+	<entry key="java_typemapping.java.lang.Long">Long</entry>
+	<entry key="java_typemapping.java.lang.String">String</entry>
+	<entry key="java_typemapping.java.math.BigDecimal">BigDecimal</entry>
+		<!-- 数据库 账号密码  -->
+	<entry key="jdbc.username">developer</entry>
+	<entry key="jdbc.password">ihel0rdDlbWySzTx</entry>
+	
+	<!-- Mysql -->
+	<entry key="jdbc.url">jdbc:mysql://121.37.27.4:3306/rpa_tencent_ad?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false</entry>
+	<entry key="jdbc.driver">com.mysql.jdbc.Driver</entry>
+	
+	
+
+</properties>

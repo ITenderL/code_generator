@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>yqjp-portals-cloud</artifactId>
+        <groupId>com.yqjp</groupId>
+        <version>0.0.2-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>${projectname}</artifactId>
+    
+	<properties>
+
+	</properties>    
+
+    <dependencies>
+    
+	<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yqjp</groupId>
+			<artifactId>yqjp-springboot-starter</artifactId>
+			<version>${r"${yqjp.starter.version}"}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.9</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.yqjp.framework</groupId>
+  			<artifactId>yqjp-web</artifactId>
+  			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+
+		<!-- Mybatis Generator -->
+		<dependency>
+			<groupId>org.mybatis.generator</groupId>
+			<artifactId>mybatis-generator-core</artifactId>
+			<version>1.3.2</version>
+			<scope>compile</scope>
+			<optional>true</optional>
+		</dependency>
+		<!--通用Mapper -->
+		<dependency>
+			<groupId>tk.mybatis</groupId>
+			<artifactId>mapper</artifactId>
+			<version>${r"${mapper.version}"}</version>
+		</dependency> 
+
+
+	
+
+
+		<dependency>
+			<groupId>com.yqjp.framework</groupId>
+			  <artifactId>yqjp-commons-support</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
+		</dependency> 
+		
+	 
+		
+		<dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.9</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.jms</groupId>
+                    <artifactId>jms</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jdmk</groupId>
+                    <artifactId>jmxtools</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>com.sun.jmx</groupId>
+                    <artifactId>jmxri</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+            </exclusions>
+            <optional>true</optional>
+        </dependency> 
+
+		
+
+      	<dependency>
+			<groupId>com.yqjp</groupId>
+			<artifactId>yqjp-common</artifactId>
+			<version>${r"${yqjp.common.version}"}</version>
+		</dependency> 
+ 
+        <dependency>
+			<groupId>com.yqjp</groupId>
+			<artifactId>yqjp-spring-cloud-swagger</artifactId>
+			<version>0.0.2-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yqjp</groupId>
+			<artifactId>yqjp-mybatis</artifactId>
+			<version>${r"${yqjp.mybatis.version}"}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yqjp.framework</groupId>
+			<artifactId>yqjp-data-mybatis</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		       
+		
+    </dependencies>
+</project>

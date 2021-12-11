@@ -1,0 +1,12 @@
+app:
+  id: rpa-console-system-api
+apollo:
+  bootstrap:
+    enabled: true
+    #将Apollo配置加载提到初始化日志系统之前
+    eagerLoad:
+      enabled: true
+    namespaces: application
+  cluster: default
+  cacheDir: /tmp/apollo-cache
+
