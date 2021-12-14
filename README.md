@@ -14,17 +14,17 @@
 3. 网关映射名
 4. 微服务数据库连接
 
-![img](../../../Note/YouDaoYunNote/m13156447127@163.com/c41f689e632b4e2ea90e450a98ee68db/.png)
+![img](images/generate-config.png)
 
 **修改@author**
 
 敲重点：路径：generator_jpa\generator\template下
 
-![img](../../../Note/YouDaoYunNote/m13156447127@163.com/6153121ee125428cb38c7604f9bd8548/.png)
+![img](images/modify-authorr.png)
 
 copyright_class.include文件中@author替换为作者为本人名称
 
-![img](../../../Note/YouDaoYunNote/m13156447127@163.com/36dc455cbd484c1cb48bf71c64dd3580/.png)
+![img](images/replace-author.png)
 
 **操作说明**
 
@@ -38,4 +38,4 @@ copyright_class.include文件中@author替换为作者为本人名称
 
 生成的.sql文件是菜单添加的sql,一般根据业务修改后在数据库执行. 
 
-![img](../../../Note/YouDaoYunNote/m13156447127@163.com/fd1b4ec718b3466e99da559121ef8382/.png)
+![img](images/execute.png)
